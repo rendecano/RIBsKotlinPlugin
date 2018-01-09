@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.uber.rib.core.InteractorBaseComponent
 import com.uber.rib.core.ViewBuilder
-import com.westpac.ribsbank.test.${rib_name}Builder.${rib_name}Scope
 import dagger.Binds
 import dagger.BindsInstance
 import dagger.Provides
