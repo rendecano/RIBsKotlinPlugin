@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- package com.uber.presidio.kotlin.intellij_plugin.generator.rib;
+ package com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib;
 
-import com.uber.presidio.kotlin.intellij_plugin.generator.Generator;
+import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.Generator;
 
-public class InteractorWithPresenterTestGenerator extends Generator {
+public class ViewRouterTestGenerator extends Generator {
 
-  private static final String TEMPLATE_NAME = "RibInteractorWithPresenterTest.java.template";
+  private static final String TEMPLATE_NAME = "RibViewRouterTest.java.template";
 
-  public InteractorWithPresenterTestGenerator(String packageName, String ribName) {
+  public ViewRouterTestGenerator(String packageName, String ribName) {
     super(packageName, ribName, TEMPLATE_NAME);
   }
 
   @Override
   public String getClassName() {
-    return String.format("%sInteractorTest", getRibName());
+    return String.format("%sRouterTest", getRibName());
   }
 }

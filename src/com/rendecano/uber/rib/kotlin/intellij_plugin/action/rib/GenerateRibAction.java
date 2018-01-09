@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- package com.uber.presidio.kotlin.intellij_plugin.action.rib;
+ package com.rendecano.uber.rib.kotlin.intellij_plugin.action.rib;
 
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.uber.presidio.kotlin.intellij_plugin.generator.GeneratorPair;
+import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.GeneratorPair;
 
 /**
  * This action will ask generate files required for a new Rib based on a name provided by the

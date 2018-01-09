@@ -13,21 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- package com.uber.presidio.kotlin.intellij_plugin.generator.rib;
+ package com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib;
 
-import com.uber.presidio.kotlin.intellij_plugin.generator.Generator;
+import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.Generator;
 
-/** Generate subclass that uses a view template. */
-public class ViewGenerator extends Generator {
+public class ViewRouterGenerator extends Generator {
 
-  private static final String TEMPLATE_NAME = "RibView.kt.template";
+  private static final String TEMPLATE_NAME = "RibViewRouter.kt.template";
 
-  public ViewGenerator(String packageName, String ribName) {
+  public ViewRouterGenerator(String packageName, String ribName) {
     super(packageName, ribName, TEMPLATE_NAME);
   }
 
   @Override
   public String getClassName() {
-    return String.format("%sView", getRibName());
+    return String.format("%sRouter", getRibName());
   }
 }

@@ -1,9 +1,8 @@
 <idea-plugin version="2">
-    <id>com.uber.rib.kotlin.intellij-plugin</id>
+    <id>com.rendecano.uber.rib.kotlin.intellij_plugin</id>
     <name>RIBs Kotlin Plugin</name>
     <version>0.1.0</version>
     <vendor>
-        Uber Mobile Platform Team.
         Ren Decano
     </vendor>
     <description>
@@ -22,7 +21,7 @@
     <actions>
         <group description="RIB architecture templates in Kotlin" id="RibActionGroup" text="RIB" type="">
             <separator/>
-            <action class="com.uber.presidio.kotlin.intellij_plugin.action.rib.GenerateRibAction" description="Generates a new RIB in Kotlin." icon="/icons/generate_rib.png" id="GenerateKotlinRib" text="New RIB Kotlin...">
+            <action class="com.rendecano.uber.rib.kotlin.intellij_plugin.action.rib.GenerateRibAction" description="Generates a new RIB in Kotlin." icon="/icons/generate_rib.png" id="GenerateKotlinRib" text="New RIB Kotlin...">
                 <add-to-group anchor="last" group-id="NewGroup" relative-to-group="NewGroup"/>
             </action>
         </group>
