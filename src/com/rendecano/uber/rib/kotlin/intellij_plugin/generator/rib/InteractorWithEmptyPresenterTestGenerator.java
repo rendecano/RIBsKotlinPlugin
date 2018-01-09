@@ -20,10 +20,10 @@ import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.Generator;
 public class InteractorWithEmptyPresenterTestGenerator extends Generator {
 
   private static final String TEMPLATE_NAME =
-      "RibInteractorWithEmptyPresenterTest.java.template";
+      "RibInteractorWithEmptyPresenterTest";
 
-  public InteractorWithEmptyPresenterTestGenerator(String packageName, String ribName) {
-    super(packageName, ribName, TEMPLATE_NAME);
+  public InteractorWithEmptyPresenterTestGenerator(String packageName, String ribName, boolean isKotlinSelected) {
+    super(packageName, ribName, isKotlinSelected, TEMPLATE_NAME);
   }
 
   @Override

@@ -6,7 +6,7 @@
         Ren Decano
     </vendor>
     <description>
-        Uber RIB Plugin in Kotlin&lt;br /&gt; &lt;br /&gt;
+        Uber RIB Plugin&lt;br /&gt; &lt;br /&gt;
         &lt;ul&gt;
         &lt;li&gt;Easily create new RIBs in Kotlin.&lt;/li&gt;
         &lt;/ul&gt;
@@ -19,9 +19,9 @@
     </change-notes>
     <idea-version since-build="163"/>
     <actions>
-        <group description="RIB architecture templates in Kotlin" id="RibActionGroup" text="RIB" type="">
+        <group description="RIB architecture templates" id="RibActionGroup" text="RIB" type="">
             <separator/>
-            <action class="com.rendecano.uber.rib.kotlin.intellij_plugin.action.rib.GenerateRibAction" description="Generates a new RIB in Kotlin." icon="/icons/generate_rib.png" id="GenerateKotlinRib" text="New RIB Kotlin...">
+            <action class="com.rendecano.uber.rib.kotlin.intellij_plugin.action.rib.GenerateRibAction" description="Generates a new RIB." icon="/icons/generate_rib.png" id="GenerateKotlinRib" text="New RIB...">
                 <add-to-group anchor="last" group-id="NewGroup" relative-to-group="NewGroup"/>
             </action>
         </group>

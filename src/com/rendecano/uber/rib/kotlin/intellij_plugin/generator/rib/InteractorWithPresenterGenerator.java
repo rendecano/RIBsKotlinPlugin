@@ -19,10 +19,12 @@ import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.Generator;
 
 public class InteractorWithPresenterGenerator extends Generator {
 
-  private static final String TEMPLATE_NAME = "RibInteractorWithPresenter.kt.template";
+  private static final String TEMPLATE_NAME = "RibInteractorWithPresenter";
 
-  public InteractorWithPresenterGenerator(String packageName, String ribName) {
-    super(packageName, ribName, TEMPLATE_NAME);
+  public InteractorWithPresenterGenerator(String packageName, String ribName, boolean isKotlinSelected) {
+
+    super(packageName, ribName, isKotlinSelected, TEMPLATE_NAME);
+
   }
 
   @Override
