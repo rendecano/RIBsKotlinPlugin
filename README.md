@@ -11,7 +11,7 @@ https://github.com/uber/RIBs/tree/master/android/tooling
 
 ![Alt text](/screenshots/screen_2a.png?raw=true "Screenshot")
 
-# Sample project in Kotlin
+# Sample RIBs project in Kotlin
 
 CoinEdge
 
