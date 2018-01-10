@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.rendecano.uber.rib.kotlin.intellij_plugin.action.rib;
+package com.uber.presidio.intellij_plugin.action.rib;
 
 import com.google.common.collect.ImmutableList;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.GeneratorPair;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.BuilderGenerator;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.InteractorWithEmptyPresenterGenerator;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.InteractorWithEmptyPresenterTestGenerator;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.InteractorWithPresenterGenerator;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.InteractorWithPresenterTestGenerator;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.RouterGenerator;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.RouterTestGenerator;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.ViewBuilderGenerator;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.ViewGenerator;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.ViewRouterGenerator;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib.ViewRouterTestGenerator;
+import com.uber.presidio.intellij_plugin.generator.GeneratorPair;
+import com.uber.presidio.intellij_plugin.generator.rib.BuilderGenerator;
+import com.uber.presidio.intellij_plugin.generator.rib.InteractorWithEmptyPresenterGenerator;
+import com.uber.presidio.intellij_plugin.generator.rib.InteractorWithEmptyPresenterTestGenerator;
+import com.uber.presidio.intellij_plugin.generator.rib.InteractorWithPresenterGenerator;
+import com.uber.presidio.intellij_plugin.generator.rib.InteractorWithPresenterTestGenerator;
+import com.uber.presidio.intellij_plugin.generator.rib.RouterGenerator;
+import com.uber.presidio.intellij_plugin.generator.rib.RouterTestGenerator;
+import com.uber.presidio.intellij_plugin.generator.rib.ViewBuilderGenerator;
+import com.uber.presidio.intellij_plugin.generator.rib.ViewGenerator;
+import com.uber.presidio.intellij_plugin.generator.rib.ViewRouterGenerator;
+import com.uber.presidio.intellij_plugin.generator.rib.ViewRouterTestGenerator;
 
 /**
  * Utility methods for getting lists of generators in different configurations.

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.rendecano.uber.rib.kotlin.intellij_plugin.action.rib;
+package com.uber.presidio.intellij_plugin.action.rib;
 
 import com.intellij.openapi.ui.DialogWrapper;
 

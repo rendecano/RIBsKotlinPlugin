@@ -1,29 +1,39 @@
 <idea-plugin version="2">
-    <id>com.rendecano.uber.rib.kotlin.intellij_plugin</id>
-    <name>RIBs Kotlin Plugin</name>
-    <version>0.1.0</version>
+    <id>com.uber.rib.intellij-plugin</id>
+    <name>RIBs Plugin</name>
+    <version>0.1.2</version>
     <vendor>
-        Ren Decano
+        Uber Mobile Platform Team
     </vendor>
-    <description>
-        Uber RIB Plugin&lt;br /&gt; &lt;br /&gt;
-        &lt;ul&gt;
-        &lt;li&gt;Easily create new RIBs in Kotlin.&lt;/li&gt;
-        &lt;/ul&gt;
-    </description>
-    <change-notes>
-        &lt;strong&gt;0.1.0&lt;/strong&gt;&lt;br/&gt;
-        &lt;ul&gt;
-        &lt;li&gt;Initial release&lt;/li&gt;
-        &lt;/ul&gt;
-    </change-notes>
+
+    <description><![CDATA[
+      Uber RIB Plugin <br /> <br />
+      <ul>
+        <li>Easily create new RIBs.</li>
+      </ul>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <strong>0.1.2</strong><br/>
+      <ul>
+        <li>Added Kotlin support</li>
+      </ul>
+    ]]></change-notes>
+
     <idea-version since-build="163"/>
+
     <actions>
         <group description="RIB architecture templates" id="RibActionGroup" text="RIB" type="">
             <separator/>
-            <action class="com.rendecano.uber.rib.kotlin.intellij_plugin.action.rib.GenerateRibAction" description="Generates a new RIB." icon="/icons/generate_rib.png" id="GenerateKotlinRib" text="New RIB...">
+            <action
+                class="com.uber.presidio.intellij_plugin.action.rib.GenerateRibAction"
+                description="Generates a new RIB."
+                    icon="/icons/generate_rib.png"
+                id="GenerateRib"
+                text="New RIB...">
                 <add-to-group anchor="last" group-id="NewGroup" relative-to-group="NewGroup"/>
             </action>
         </group>
     </actions>
+
 </idea-plugin>

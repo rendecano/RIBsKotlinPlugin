@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.rendecano.uber.rib.kotlin.intellij_plugin.generator;
+package com.uber.presidio.intellij_plugin.generator;
 
 import com.google.common.base.Charsets;
 import com.google.common.base.Preconditions;

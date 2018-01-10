@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- package com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib;
+package com.uber.presidio.intellij_plugin.generator.rib;
 
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.Generator;
+import com.uber.presidio.intellij_plugin.generator.Generator;
 
-public class ViewRouterGenerator extends Generator {
+public class RouterGenerator extends Generator {
 
-  private static final String TEMPLATE_NAME = "RibViewRouter";
+    private static final String TEMPLATE_NAME = "RibRouter";
 
-  public ViewRouterGenerator(String packageName, String ribName, boolean isKotlinSelected) {
-    super(packageName, ribName, isKotlinSelected, TEMPLATE_NAME);
-  }
+    public RouterGenerator(String packageName, String ribName, boolean isKotlinSelected) {
+        super(packageName, ribName, isKotlinSelected, TEMPLATE_NAME);
+    }
 
-  @Override
-  public String getClassName() {
-    return String.format("%sRouter", getRibName());
-  }
+    @Override
+    public String getClassName() {
+        return String.format("%sRouter", getRibName());
+    }
 }

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- package com.rendecano.uber.rib.kotlin.intellij_plugin.generator.rib;
+ package com.uber.presidio.intellij_plugin.generator.rib;
 
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.Generator;
+import com.uber.presidio.intellij_plugin.generator.Generator;
 
 /** Generate subclass that uses a view template. */
 public class ViewGenerator extends Generator {

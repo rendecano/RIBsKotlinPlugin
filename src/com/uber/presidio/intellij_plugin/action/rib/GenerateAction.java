@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.rendecano.uber.rib.kotlin.intellij_plugin.action.rib;
+package com.uber.presidio.intellij_plugin.action.rib;
 
 import com.google.common.base.Preconditions;
 import com.intellij.ide.IdeView;
@@ -44,8 +44,7 @@ import com.intellij.psi.PsiManager;
 import com.intellij.psi.PsiNameHelper;
 import com.intellij.psi.PsiPackage;
 import com.intellij.refactoring.PackageWrapper;
-import com.intellij.refactoring.util.RefactoringUtil;
-import com.rendecano.uber.rib.kotlin.intellij_plugin.generator.Generator;
+import com.uber.presidio.intellij_plugin.generator.Generator;
 
 import org.jetbrains.jps.model.java.JavaModuleSourceRootTypes;
 import org.jetbrains.jps.model.java.JavaSourceRootType;
