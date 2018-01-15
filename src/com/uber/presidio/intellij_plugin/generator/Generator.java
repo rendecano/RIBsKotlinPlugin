@@ -48,7 +48,6 @@ public abstract class Generator {
     private static final String TEMPLATE_TOKEN_PACKAGE_NAME = "package_name";
     private static final String TEMPLATE_TOKEN_RIBLET_NAME = "rib_name";
     private static final String TEMPLATE_TOKEN_RIBLET_NAME_TO_LOWER = "rib_name_to_lower";
-    private static final String TEMPLATE_TOKEN_RIBLET_CODE_TYPE = "rib_code_type";
 
     private final String packageName;
     private final String ribName;
