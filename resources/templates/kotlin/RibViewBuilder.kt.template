@@ -7,10 +7,9 @@ import com.uber.rib.core.ViewBuilder
 import dagger.Binds
 import dagger.BindsInstance
 import dagger.Provides
-import java.lang.annotation.Retention
-import java.lang.annotation.RetentionPolicy.CLASS
 import javax.inject.Qualifier
 import javax.inject.Scope
+import kotlin.annotation.AnnotationRetention.BINARY
 
 /**
  * Builder for the {@link ${rib_name}Scope}.
@@ -89,10 +88,10 @@ class ${rib_name}Builder(dependency: ParentComponent) : ViewBuilder<${rib_name}V
     }
 
     @Scope
-    @Retention(CLASS)
+    @Retention(BINARY)
     internal annotation class ${rib_name}Scope
 
     @Qualifier
-    @Retention(CLASS)
+    @Retention(BINARY)
     internal annotation class ${rib_name}Internal
 }
