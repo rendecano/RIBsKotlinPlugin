@@ -1,10 +1,12 @@
-package ${package_name};
+package ${package_name}
 
 import android.content.Context
 import android.util.AttributeSet
-import android.view.View
+import android.widget.FrameLayout
 
 /**
  * Top level view for {@link ${rib_name}Builder.${rib_name}Scope}.
  */
-class ${rib_name}View @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyle: Int = 0) : View(context, attrs, defStyle), ${rib_name}Interactor.${rib_name}Presenter
+class ${rib_name}View @JvmOverloads constructor(
+        context: Context, attrs: AttributeSet? = null, defStyle: Int = 0
+) : FrameLayout(context, attrs, defStyle), ${rib_name}Interactor.${rib_name}Presenter
