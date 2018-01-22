@@ -20,7 +20,7 @@ class ${rib_name}InteractorTest : RibTestBasePlaceholder() {
     fun setup() {
         MockitoAnnotations.initMocks(this)
 
-        interactor = Test${rib_name}Interactor.create(presenter)
+        interactor = Test${rib_name}Interactor.create(presenter, listener)
     }
 
     /**
