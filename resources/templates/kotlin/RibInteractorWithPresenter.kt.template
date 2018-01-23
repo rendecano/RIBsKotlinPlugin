@@ -1,4 +1,4 @@
-package ${package_name};
+package ${package_name}
 
 import com.uber.rib.core.Bundle
 import com.uber.rib.core.Interactor
@@ -13,8 +13,8 @@ import javax.inject.Inject
 @RibInteractor
 class ${rib_name}Interactor : Interactor<${rib_name}Interactor.${rib_name}Presenter, ${rib_name}Router>() {
 
-    @Inject
-    lateinit var presenter: ${rib_name}Presenter
+    @Inject lateinit var presenter: ${rib_name}Presenter
+    @Inject lateinit var listener: Listener
 
     override fun didBecomeActive(savedInstanceState: Bundle?) {
         super.didBecomeActive(savedInstanceState)
@@ -32,4 +32,9 @@ class ${rib_name}Interactor : Interactor<${rib_name}Interactor.${rib_name}Presen
      * Presenter interface implemented by this RIB's view.
      */
     interface ${rib_name}Presenter
+
+    /**
+     * Listener interface implemented by a parent RIB's interactor's inner class.
+     */
+    interface Listener
 }

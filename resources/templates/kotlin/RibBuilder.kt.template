@@ -1,4 +1,4 @@
-package ${package_name};
+package ${package_name}
 
 import com.uber.rib.core.Builder
 import com.uber.rib.core.EmptyPresenter
@@ -13,6 +13,11 @@ import dagger.BindsInstance
 
 import java.lang.annotation.RetentionPolicy.CLASS
 
+/**
+ * Builder for the {@link ${rib_name}Scope}.
+ *
+ * TODO describe this scope's responsibility as a whole.
+ */
 class ${rib_name}Builder(dependency: ParentComponent) : Builder<${rib_name}Router, ${rib_name}Builder.ParentComponent>(dependency) {
 
     /**
@@ -31,7 +36,7 @@ class ${rib_name}Builder(dependency: ParentComponent) : Builder<${rib_name}Route
     }
 
     interface ParentComponent {
-        // TODO: Define dependencies required from your parent interactor here.
+        val ${rib_name_to_lower}Listener: ${rib_name}Interactor.Listener
     }
 
 
@@ -41,16 +46,12 @@ class ${rib_name}Builder(dependency: ParentComponent) : Builder<${rib_name}Route
         @dagger.Module
         companion object {
 
-            @${rib_name}Scope
-            @Provides
-            @JvmStatic
+            @${rib_name}Scope @Provides @JvmStatic
             internal fun presenter(): EmptyPresenter {
                 return EmptyPresenter()
             }
 
-            @${rib_name}Scope
-            @Provides
-            @JvmStatic
+            @${rib_name}Scope @Provides @JvmStatic
             internal fun router(component: Component, interactor: ${rib_name}Interactor): ${rib_name}Router {
                 return ${rib_name}Router(interactor, component)
             }
